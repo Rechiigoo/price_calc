@@ -1,6 +1,7 @@
 #include "calculus.h"
 using namespace std;
 
+int price = -1;
 int price_calc(string &price_type, int &extra_chars, bool additions, bool nsfw, bool bg){
     //base price for piece
     if (price_type == "Style1")
@@ -20,7 +21,7 @@ int price_calc(string &price_type, int &extra_chars, bool additions, bool nsfw, 
     if(nsfw)
         price += price * 0.3;
 
-    int base_price = price; //for calcing
+    int base_price = price; //for calculating additions
 
     if(extra_chars > 0){
         price += (base_price/2)*extra_chars;

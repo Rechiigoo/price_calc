@@ -9,7 +9,6 @@ const int ST2 = 160;
 const int ST3 = 50;
 const int IC = 40;
 const int REF = 140;
-int price = -1;
 
 int price_calc(std::string &price_type, int &extra_chars, bool additions, bool nsfw, bool bg);
 
